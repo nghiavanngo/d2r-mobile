@@ -43,7 +43,7 @@ jobs:
             -DCMAKE_SYSTEM_NAME=iOS \
             -DCMAKE_OSX_SYSROOT=iphoneos \
             -DCMAKE_OSX_ARCHITECTURES=arm64 \
-            -DCMAKE_OSX_DEPLOYMENT_TARGET=15.0 \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=18.0 \
             -DCMAKE_BUILD_TYPE=${{ github.event.inputs.build_type || 'Release' }} \
             -DPRODUCT_BUNDLE_IDENTIFIER="com.d2rmobile.game" \
             -DPRODUCT_NAME="D2R Mobile"
@@ -76,7 +76,7 @@ jobs:
               <key>LSRequiresIPhoneOS</key>
               <true/>
               <key>MinimumOSVersion</key>
-              <string>15.0</string>
+              <string>18.0</string>
               <key>UIFileSharingEnabled</key>
               <true/>
               <key>LSSupportsOpeningDocumentsInPlace</key>
